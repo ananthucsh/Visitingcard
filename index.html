@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Business Card</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .card-container {
+        background: #fff;
+        width: 360px;
+        border-radius: 25px;
+        overflow: hidden;
+        box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+        text-align: center;
+        position: relative;
+        border: 1px solid #e1e1e1;
+    }
+
+    /* Top Logo Section */
+    .header {
+        background: #ffffff;
+        padding: 25px 15px 50px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .header img.logo {
+        max-width: 230px;
+        display: block;
+        margin: auto;
+    }
+
+    .tagline {
+        font-size: 12px;
+        color: #555;
+        letter-spacing: 1px;
+        margin-top: 5px;
+    }
+
+    /* Profile Section */
+    .profile {
+        margin-top: -60px;
+        z-index: 2;
+        position: relative;
+    }
+
+    .profile img {
+        width: 110px;
+        height: 110px;
+        border-radius: 50%;
+        border: 5px solid white;
+        object-fit: cover;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    /* Info Section */
+    .info {
+        background: #2d5f77;
+        color: white;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 15px;
+        margin-top: -30px;
+    }
+
+    .info h2 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    .info p.role {
+        margin: 5px 0 15px;
+        font-size: 14px;
+        font-weight: 400;
+        opacity: 0.9;
+    }
+
+    .info p.description {
+        font-size: 12px;
+        line-height: 1.5;
+        color: #d1e3f3;
+    }
+
+    /* Buttons Section */
+    .btn {
+        display: block;
+        margin: 10px auto;
+        padding: 12px;
+        width: 80%;
+        border: none;
+        border-radius: 12px;
+        background: white;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        text-decoration: none;
+        color: black;
+        font-weight: 500;
+        transition: background 0.2s ease-in-out;
+    }
+
+    .btn img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .btn:hover {
+        background: #f1f1f1;
+    }
+</style>
+</head>
+<body>
+
+<div class="card-container">
+    <!-- Logo Section -->
+    <div class="header">
+        <img src="https://www.figma.com/community/resource/5be90460-7d95-4394-a873-018d015f8a0c/thumbnail" alt="Logo" class="logo">
+        <p class="tagline">A TRADITION OF TRUST</p>
+    </div>
+
+    <!-- Profile -->
+    <div class="profile">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocLIgs7VOWhiu7EAfi98ucoYZ3m3YU0ApWpheM0Rfln5qHz71lzw=s288-c-no" alt="Profile">
+    </div>
+
+    <!-- Info Section -->
+    <div class="info">
+        <h2>Ananth Shaji</h2>
+        <p class="role">Web developer & Designer</p>
+        <p class="description">
+            
+        </p>
+    </div>
+
+    <!-- Buttons -->
+    <a href="tel:+919744572639" class="btn">
+        <img src="https://img.icons8.com/?size=100&id=L9ByuHGgbUNK&format=png&color=000000"> +919744572639
+    </a>
+    <a href="https://wa.me/+919744572639" class="btn">
+        <img src="https://img.icons8.com/?size=100&id=BkugfgmBwtEI&format=png&color=000000"> WhatsApp
+    </a>
+    <a href="https://www.google.com/maps/place/9%C2%B003'54.7%22N+76%C2%B032'15.5%22E/@9.0651873,76.5350604,17z/data=!3m1!4b1!4m4!3m3!8m2!3d9.0651873!4d76.5376353?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D" class="btn">
+        <img src="https://img.icons8.com/?size=100&id=XieTOK4V0QEI&format=png&color=000000"> Location
+    </a>
+	<a href="mailto:ananthucsh@gmail.com" class="btn">
+        <img src="https://img.icons8.com/?size=100&id=eFPBXQop6V2m&format=png&color=000000"> E-Mail
+    </a>
+</div>
+
+</body>
+</html>
