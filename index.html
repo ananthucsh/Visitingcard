@@ -113,8 +113,8 @@
         cursor: pointer;
         box-shadow: 0 2px 6px rgba(0,0,0,0.1);
         display: flex;
-        align-items: left;
-        justify-content: left;
+        align-items: flex-start;
+        justify-content: flex-start;
         gap: 8px;
         text-decoration: none;
         color: black;
@@ -130,6 +130,43 @@
     .btn:hover {
         background: #f1f1f1;
     }
+
+    /* Footer text section */
+    .footer-text {
+        padding: 12px 15px;
+        text-align: center;
+        font-size: 12px;
+        color: #777;
+        border-top: 1px solid #eee;
+        background: #fafafa;
+    }
+
+    /* Footer buttons section */
+    .footer-buttons {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px 15px;
+        background: #fafafa;
+        border-radius: 0 0 25px 25px;
+        gap: 8px;
+    }
+
+    .footer-btn {
+        flex: 1;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        background: #2d5f77;
+        color: white;
+        font-size: 14px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background 0.2s ease-in-out;
+    }
+
+    .footer-btn:hover {
+        background: #1b4051;
+    }
 </style>
 </head>
 <body>
@@ -138,7 +175,7 @@
     <!-- Logo Section -->
     <div class="header">
         <img src="https://img.icons8.com/?size=100&id=sO1mMMNJxeLB&format=png&color=000000" alt="Logo" class="logo">
-        <p class="tagline">YOUR VISION,OUR DESIGN</p>
+        <p class="tagline">YOUR VISION, OUR DESIGN</p>
     </div>
 
     <!-- Profile -->
@@ -149,32 +186,34 @@
     <!-- Info Section -->
     <div class="info">
         <h2>Ananth Shaji</h2>
-        <p class="role">Web developer & Designer</p>
-        <p class="description">
-            
-        </p>
+        <p class="role">Web Developer & Designer</p>
+        <p class="description"></p>
     </div>
 
-    <!-- Buttons -->
+    <!-- Contact Buttons -->
     <a href="tel:+919744572639" class="btn">
         <img src="https://img.icons8.com/?size=100&id=L9ByuHGgbUNK&format=png&color=000000"> Mobile
     </a>
     <a href="https://wa.me/+919744572639" class="btn">
         <img src="https://img.icons8.com/?size=100&id=BkugfgmBwtEI&format=png&color=000000"> WhatsApp
     </a>
-    <a href="https://www.google.com/maps/place/9%C2%B003'54.7%22N+76%C2%B032'15.5%22E/@9.0651873,76.5350604,17z/data=!3m1!4b1!4m4!3m3!8m2!3d9.0651873!4d76.5376353?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D" class="btn">
+    <a href="https://www.google.com/maps/place/9%C2%B003'54.7%22N+76%C2%B032'15.5%22E" class="btn">
         <img src="https://img.icons8.com/?size=100&id=XieTOK4V0QEI&format=png&color=000000"> Location
     </a>
-	<a href="mailto:ananthucsh@gmail.com" class="btn">
+    <a href="mailto:ananthucsh@gmail.com" class="btn">
         <img src="https://img.icons8.com/?size=100&id=eFPBXQop6V2m&format=png&color=000000"> E-mail
     </a>
+
+    <!-- Footer -->
+    
+    <div class="footer-buttons">
+        <button class="footer-btn" onclick="window.location.href='contact.vcf'">Save Contact</button>
+        <button class="footer-btn" onclick="navigator.share ? navigator.share({ title: 'My Digital Card', url: window.location.href }) : alert('Sharing not supported');">Share Card</button>
+    </div>
+	<div class="footer-text">
+        © 2025 Ananth Shaji. All Rights Reserved.
+    </div>
 </div>
 
 </body>
 </html>
-
-
-
-
-
-
